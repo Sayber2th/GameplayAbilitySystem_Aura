@@ -11,8 +11,7 @@
 	],
 	"settings": {
 		"typescript.tsc.autoDetect": "off",
-		"npm.autoDetect": "off",
-		"dotnet.defaultSolution": "disable"
+		"npm.autoDetect": "off"
 	},
 	"extensions": {
 		"recommendations": [
