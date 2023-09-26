@@ -23,7 +23,7 @@ void AAuraBaseCharacter::BeginPlay()
 	
 }
 
-void AAuraBaseCharacter::InitAbilityActorInfo();
+void AAuraBaseCharacter::InitAbilityActorInfo()
 {
 
 }
