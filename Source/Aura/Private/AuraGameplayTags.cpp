@@ -63,26 +63,26 @@ void FAuraGameplayTags::InitializeGameplayTags()
 
     GameplayTags.Attributes_Secondary_CriticalHitResistance = UGameplayTagsManager::Get().AddNativeGameplayTag(
         FName("Attributes.Secondary.CriticalHitResistance"), 
-        FString("Reduces Critical Hit Chance of enemies")
+        FString("Reduces Critical Hit Chance of attacking enemies")
         );
 
     GameplayTags.Attributes_Secondary_HealthRegeneration = UGameplayTagsManager::Get().AddNativeGameplayTag(
         FName("Attributes.Secondary.HealthRegeneration"), 
-        FString("Amount of Health regenerated every second")
+        FString("Amount of Health regenerated every 1 second")
         );
 
     GameplayTags.Attributes_Secondary_ManaRegeneration = UGameplayTagsManager::Get().AddNativeGameplayTag(
         FName("Attributes.Secondary.ManaRegeneration"), 
-        FString("Amount of Mana regenerated every second")
+        FString("Amount of Mana regenerated every 1 second")
         );
 
     GameplayTags.Attributes_Secondary_MaxHealth = UGameplayTagsManager::Get().AddNativeGameplayTag(
         FName("Attributes.Secondary.MaxHealth"), 
-        FString("Amount of Health obtainable")
+        FString("Maximum amount of Health obtainable")
         );
 
     GameplayTags.Attributes_Secondary_MaxMana = UGameplayTagsManager::Get().AddNativeGameplayTag(
         FName("Attributes.Secondary.MaxMana"), 
-        FString("Amount of Mana obtainable")
+        FString("Maximum amount of Mana obtainable")
         );
 }
