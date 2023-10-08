@@ -15,7 +15,6 @@
 AAuraPlayerController::AAuraPlayerController()
 {
     bReplicates = true;
-
     Spline = CreateDefaultSubobject<USplineComponent>("Spline");
 }
 
@@ -92,60 +91,17 @@ void AAuraPlayerController::Move(const FInputActionValue &InputActionValue)
 
 void AAuraPlayerController::CursorTrace()
 {
-    FHitResult CursorHit;
     GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, CursorHit);
     if(!CursorHit.bBlockingHit) return;
 
     LastActor = ThisActor;
     ThisActor = Cast<IEnemyInterface>(CursorHit.GetActor());
 
-    /**
-     * Line trace from cursor. There are several scenarios:
-     * A. LastActor is null && ThisActor is null
-     *      -Do nothing
-     * B. LastActor is null && ThisActor is valid
-     *      -Highlight ThisActor
-     * C. LastActor is valid && ThisActor is null
-     *      -Unhighlight the LastActor
-     * D. Both actors are valid; LastActor != ThisActor
-     *      -Unhighlight LastActor & Highlight ThisActor
-     * E. Both actors are valid; LastActor == ThisActor
-     *      -Do nothing
-    */
-
-   if(LastActor == nullptr)
-   {
-        if(ThisActor != nullptr)
-        {
-            //Case B
-            ThisActor->HighlightActor();
-        }
-        else
-        {
-            //Case A - do nothing
-        }
-   }
-   else //LastActor is valid
-   {
-        if(ThisActor == nullptr)
-        {
-            //Case C
-            LastActor->UnHighlightActor();
-        }
-        else //Both actors are valid
-        {
-            if(LastActor != ThisActor)
-            {
-                //Case D
-                LastActor->UnHighlightActor();
-                ThisActor->HighlightActor();
-            }
-            else
-            {
-                //Case E - Do nothing
-            }
-        }
-   }
+    if(LastActor != ThisActor)
+    {
+        if(LastActor) LastActor->UnHighlightActor();
+        if(ThisActor) ThisActor->HighlightActor();
+    }
 }
 
 void AAuraPlayerController::AbilityInputTagPressed(FGameplayTag InputTag)
@@ -161,23 +117,17 @@ void AAuraPlayerController::AbilityInputTagReleased(FGameplayTag InputTag)
 {
     if(!InputTag.MatchesTagExact(FAuraGameplayTags::Get().InputTag_LMB))
     {
-        if(GetASC())
-        {
-            GetASC()->AbilityInputTagReleased(InputTag);
-        }
+        if(GetASC()) GetASC()->AbilityInputTagReleased(InputTag);
         return;
     }
 
     if(bTargeting)
     {
-        if(GetASC())
-        {
-            GetASC()->AbilityInputTagReleased(InputTag);
-        }
+        if(GetASC()) GetASC()->AbilityInputTagReleased(InputTag);
     }
     else
     {
-        APawn* ControlledPawn = GetPawn();
+        const APawn* ControlledPawn = GetPawn();
         if(FollowTime <= ShortPressThreshold && ControlledPawn)
         {
             if(UNavigationPath* NavPath = UNavigationSystemV1::FindPathToLocationSynchronously(this, ControlledPawn->GetActorLocation(), CachedDestination))
@@ -186,7 +136,6 @@ void AAuraPlayerController::AbilityInputTagReleased(FGameplayTag InputTag)
                 for(const FVector& PointLoc : NavPath->PathPoints)
                 {
                     Spline->AddSplinePoint(PointLoc, ESplineCoordinateSpace::World);
-                    DrawDebugSphere(GetWorld(), PointLoc, 8.f, 8, FColor::Green, false, 5.f);
                 }
                 CachedDestination = NavPath->PathPoints[NavPath->PathPoints.Num() - 1];
                 bAutoRunning = true;
@@ -201,29 +150,18 @@ void AAuraPlayerController::AbilityInputTagHeld(FGameplayTag InputTag)
 {
     if(!InputTag.MatchesTagExact(FAuraGameplayTags::Get().InputTag_LMB))
     {
-        if(GetASC())
-        {
-            GetASC()->AbilityInputTagHeld(InputTag);
-        }
+        if(GetASC()) GetASC()->AbilityInputTagHeld(InputTag);
         return;
     }
 
     if(bTargeting)
     {
-        if(GetASC())
-        {
-            GetASC()->AbilityInputTagHeld(InputTag);
-        }
+        if(GetASC()) GetASC()->AbilityInputTagHeld(InputTag);
     }
     else
     {
         FollowTime += GetWorld()->GetDeltaSeconds();
-
-        FHitResult Hit;
-        if(GetHitResultUnderCursor(ECC_Visibility, false, Hit))
-        {
-            CachedDestination = Hit.ImpactPoint;
-        }
+        if(CursorHit.bBlockingHit) CachedDestination = CursorHit.ImpactPoint;
 
         if(APawn* ControlledPawn = GetPawn())
         {
