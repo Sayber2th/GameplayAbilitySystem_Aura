@@ -71,7 +71,7 @@ public:
 
 	/**
 	 * Primary Attributes
-	*/
+	 */
 
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_Strength, Category = "Primary Attributes")
 	FGameplayAttributeData Strength;
@@ -103,7 +103,7 @@ public:
 
 	/**
 	 * Vital Attributes
-	*/
+	 */
 
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_Health, Category = "Vital Attributes")
 	FGameplayAttributeData Health;
@@ -120,8 +120,16 @@ public:
 	void OnRep_Mana(const FGameplayAttributeData& OldMana) const;
 
 	/**
+	 * Meta Attributes 
+	 */
+
+	UPROPERTY(BlueprintReadOnly, Category = "Meta Attributes")
+	FGameplayAttributeData IncomingDamage;
+	ATTRIBUTE_ACCESSORS(UAuraAttributeSet, IncomingDamage);
+
+	/**
 	 * Secondary Attributes
-	*/
+	 */
 
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_MaxHealth, Category = "Secondary Attributes")
 	FGameplayAttributeData MaxHealth;
