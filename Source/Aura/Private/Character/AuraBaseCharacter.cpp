@@ -28,6 +28,11 @@ UAbilitySystemComponent* AAuraBaseCharacter::GetAbilitySystemComponent() const
 	return AbilitySystemComponent;
 }
 
+UAnimMontage* AAuraBaseCharacter::GetHitReactMontage_Implementation()
+{
+	return HitReactMontage;
+}
+
 void AAuraBaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
