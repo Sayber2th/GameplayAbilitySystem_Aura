@@ -10,6 +10,7 @@
 #include "Player/AuraPlayerState.h"
 #include "UI/WidgetController/AuraWidgetController.h"
 #include "Game/AuraGameModeBase.h"
+#include "AbilitySystem/Data/CharacterClassInfo.h"
 
 UOverlayWidgetController *UAuraAbilitySystemLibrary::GetOverlayWidgetController(const UObject *WorldContextObject)
 {
@@ -24,7 +25,6 @@ UOverlayWidgetController *UAuraAbilitySystemLibrary::GetOverlayWidgetController(
             return AuraHUD->GetOverlayWidgetController(WidgetControllerParams);
         }
     }
-
     return nullptr;
 }
 
@@ -41,19 +41,18 @@ UAttributeMenuWidgetController* UAuraAbilitySystemLibrary::GetAttributeMenuWidge
             return AuraHUD->GetAttributeMenuWidgetController(WidgetControllerParams);
         }
     }
-
     return nullptr;
 }
 
 void UAuraAbilitySystemLibrary::InitializeDefaultAttributes(const UObject* WorldContextObject, ECharacterClass CharacterClass, float Level, UAbilitySystemComponent* ASC)
 {
-    AAuraGameModeBase* AuraGameMode = Cast<AAuraGameModeBase>(UGameplayStatics::GetGameMode(WorldContextObject));
+    const AAuraGameModeBase* AuraGameMode = Cast<AAuraGameModeBase>(UGameplayStatics::GetGameMode(WorldContextObject));
     if(AuraGameMode == nullptr) return;
 
-    AActor* AvatarActor = ASC->GetAvatarActor();
+    const AActor* AvatarActor = ASC->GetAvatarActor();
 
     UCharacterClassInfo* CharacterClassInfo = AuraGameMode->CharacterClassInfo;
-    FCharacterClassDefaultInfo ClassDefaultInfo = CharacterClassInfo->GetClassDefaultInfo(CharacterClass);
+    const FCharacterClassDefaultInfo ClassDefaultInfo = CharacterClassInfo->GetClassDefaultInfo(CharacterClass);
 
     FGameplayEffectContextHandle PrimaryAttributesContextHandle = ASC->MakeEffectContext();
     PrimaryAttributesContextHandle.AddSourceObject((AvatarActor));
@@ -69,4 +68,17 @@ void UAuraAbilitySystemLibrary::InitializeDefaultAttributes(const UObject* World
     VitalAttributesContextHandle.AddSourceObject((AvatarActor));
     const FGameplayEffectSpecHandle VitalAttributesSpecHandle = ASC->MakeOutgoingSpec(CharacterClassInfo->VitalAttributes, Level, VitalAttributesContextHandle);
     ASC->ApplyGameplayEffectSpecToSelf(*VitalAttributesSpecHandle.Data.Get());
+}
+
+void UAuraAbilitySystemLibrary::GiveStartupAbilities(const UObject* WorldContextObject, UAbilitySystemComponent* ASC)
+{
+    const AAuraGameModeBase* AuraGameMode = Cast<AAuraGameModeBase>(UGameplayStatics::GetGameMode(WorldContextObject));
+    if(AuraGameMode == nullptr) return;
+
+    UCharacterClassInfo* CharacterClassInfo = AuraGameMode->CharacterClassInfo;
+    for(const TSubclassOf<UGameplayAbility> AbilityClass : CharacterClassInfo->CommonAbilities)
+    {
+        FGameplayAbilitySpec AbilitySpec = FGameplayAbilitySpec(AbilityClass, 1);
+        ASC->GiveAbility(AbilitySpec);
+    }
 }
