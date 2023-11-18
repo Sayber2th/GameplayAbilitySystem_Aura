@@ -9,8 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a68be36f-3542-493d-9141-3dbf5fe9cc94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraBaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraBaseCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraBaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraBaseCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://E:/Unreal Engine/UE Projects/Aura/Source/Aura/Private/AbilitySystem/AuraAbilitySystemLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Unreal Engine/UE Projects/Aura/Source/Aura/Private/AbilitySystem/AuraAbilitySystemLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Unreal Engine/UE Projects/Aura/Source/Aura/Private/Character/AuraBaseCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Unreal Engine/UE Projects/Aura/Source/Aura/Private/Character/AuraBaseCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -129,7 +127,8 @@
       <workItem from="1699782914080" duration="4592000" />
       <workItem from="1699852058956" duration="6750000" />
       <workItem from="1699938533784" duration="648000" />
-      <workItem from="1699939342908" duration="2515000" />
+      <workItem from="1699939342908" duration="3428000" />
+      <workItem from="1700290971088" duration="1031000" />
     </task>
     <task id="LOCAL-00001" summary="Damage Meta Attribute &amp; Set by Caller Magnitude">
       <option name="closed" value="true" />
@@ -171,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699857112822</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dissolve Effect">
+      <option name="closed" value="true" />
+      <created>1699942866052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699942866052</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +203,7 @@
     <MESSAGE value="Enemy Hit React" />
     <MESSAGE value="Activating the Enemy Hit React Ability" />
     <MESSAGE value="Enemy Death" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enemy Death" />
+    <MESSAGE value="Dissolve Effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dissolve Effect" />
   </component>
 </project>
