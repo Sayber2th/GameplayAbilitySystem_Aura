@@ -7,8 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a68be36f-3542-493d-9141-3dbf5fe9cc94" name="Changes" comment="">
+    <list default="true" id="a68be36f-3542-493d-9141-3dbf5fe9cc94" name="Changes" comment="Floating Text Widget">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/AuraAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/AuraAttributeSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Player/AuraPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Player/AuraPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Public/AbilitySystem/AuraAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/AbilitySystem/AuraAttributeSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Public/Player/AuraPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/Player/AuraPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +132,7 @@
       <workItem from="1699852058956" duration="6750000" />
       <workItem from="1699938533784" duration="648000" />
       <workItem from="1699939342908" duration="3428000" />
-      <workItem from="1700290971088" duration="1031000" />
+      <workItem from="1700290971088" duration="3472000" />
     </task>
     <task id="LOCAL-00001" summary="Damage Meta Attribute &amp; Set by Caller Magnitude">
       <option name="closed" value="true" />
@@ -178,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699942866052</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Floating Text Widget">
+      <option name="closed" value="true" />
+      <created>1700292025850</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700292025850</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +216,7 @@
     <MESSAGE value="Activating the Enemy Hit React Ability" />
     <MESSAGE value="Enemy Death" />
     <MESSAGE value="Dissolve Effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dissolve Effect" />
+    <MESSAGE value="Floating Text Widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="Floating Text Widget" />
   </component>
 </project>
