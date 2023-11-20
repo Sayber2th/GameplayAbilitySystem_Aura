@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a68be36f-3542-493d-9141-3dbf5fe9cc94" name="Changes" comment="">
+    <list default="true" id="a68be36f-3542-493d-9141-3dbf5fe9cc94" name="Changes" comment="Damage Execution Calculation">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/ExecCalc/ExecCalc_Damage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/ExecCalc/ExecCalc_Damage.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
       <workItem from="1699938533784" duration="648000" />
       <workItem from="1699939342908" duration="3428000" />
       <workItem from="1700290971088" duration="3950000" />
-      <workItem from="1700474072887" duration="926000" />
+      <workItem from="1700474072887" duration="3617000" />
     </task>
     <task id="LOCAL-00001" summary="Damage Meta Attribute &amp; Set by Caller Magnitude">
       <option name="closed" value="true" />
@@ -194,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700295048554</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Damage Execution Calculation">
+      <option name="closed" value="true" />
+      <created>1700475185052</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700475185052</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +231,7 @@
     <MESSAGE value="Dissolve Effect" />
     <MESSAGE value="Floating Text Widget" />
     <MESSAGE value="Showing Damage Text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Showing Damage Text" />
+    <MESSAGE value="Damage Execution Calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Damage Execution Calculation" />
   </component>
 </project>
