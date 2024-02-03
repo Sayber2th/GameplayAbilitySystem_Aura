@@ -2,7 +2,7 @@
 	"folders": [
 		{
 			"name": "Aura",
-			"path": "E:\\Unreal Engine\\UE Projects"
+			"path": "."
 		},
 		{
 			"name": "UE5",
@@ -11,8 +11,7 @@
 	],
 	"settings": {
 		"typescript.tsc.autoDetect": "off",
-		"npm.autoDetect": "off",
-		"dotnet.defaultSolution": "disable"
+		"npm.autoDetect": "off"
 	},
 	"extensions": {
 		"recommendations": [

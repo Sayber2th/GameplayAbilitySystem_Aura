@@ -7,9 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a68be36f-3542-493d-9141-3dbf5fe9cc94" name="Changes" comment="Damage Execution Calculation">
+    <list default="true" id="a68be36f-3542-493d-9141-3dbf5fe9cc94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/ExecCalc/ExecCalc_Damage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/ExecCalc/ExecCalc_Damage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aura.code-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/Aura.code-workspace" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://E:/Unreal Engine/UE Projects/Aura/Source/Aura/Private/AbilitySystem/AuraAttributeSet.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Unreal Engine/UE Projects/Aura/Source/Aura/Private/AbilitySystem/ExecCalc/ExecCalc_Damage.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -129,7 +130,9 @@
       <workItem from="1699938533784" duration="648000" />
       <workItem from="1699939342908" duration="3428000" />
       <workItem from="1700290971088" duration="3950000" />
-      <workItem from="1700474072887" duration="3617000" />
+      <workItem from="1700474072887" duration="3693000" />
+      <workItem from="1701870434737" duration="262000" />
+      <workItem from="1705815664054" duration="700000" />
     </task>
     <task id="LOCAL-00001" summary="Damage Meta Attribute &amp; Set by Caller Magnitude">
       <option name="closed" value="true" />
@@ -203,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700475185052</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ExecCalcs - Capturing Attributes">
+      <option name="closed" value="true" />
+      <created>1700477820114</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700477820114</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +243,7 @@
     <MESSAGE value="Floating Text Widget" />
     <MESSAGE value="Showing Damage Text" />
     <MESSAGE value="Damage Execution Calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Damage Execution Calculation" />
+    <MESSAGE value="ExecCalcs - Capturing Attributes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ExecCalcs - Capturing Attributes" />
   </component>
 </project>
