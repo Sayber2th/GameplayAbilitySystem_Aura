@@ -52,6 +52,7 @@ void AAuraBaseCharacter::MulticastHandleDeath_Implementation()
 
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	Dissolve();
+	bDead = true;
 }
 
 void AAuraBaseCharacter::BeginPlay()
@@ -65,9 +66,18 @@ FVector AAuraBaseCharacter::GetCombatSocketLocation_Implementation()
 	return Weapon->GetSocketLocation(WeaponTipSocketName);
 }
 
+bool AAuraBaseCharacter::IsDead_Implementation() const
+{
+	return bDead;
+}
+
+AActor* AAuraBaseCharacter::GetAvatar_Implementation()
+{
+	return this;
+}
+
 void AAuraBaseCharacter::InitAbilityActorInfo()
 {
-
 }
 
 void AAuraBaseCharacter::ApplyEffectToSelf(TSubclassOf<UGameplayEffect> GameplayEffectClass, float Level) const
