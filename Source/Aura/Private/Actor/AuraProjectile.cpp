@@ -10,6 +10,7 @@
 #include "Aura/Aura.h"
 #include "AbilitySystemComponent.h"
 #include "AbilitySystemBlueprintLibrary.h"
+#include "AbilitySystem/AuraAbilitySystemLibrary.h"
 
 AAuraProjectile::AAuraProjectile()
 {
@@ -56,6 +57,11 @@ void AAuraProjectile::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, 
 	bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (!DamageEffectSpecHandle.Data.IsValid() || DamageEffectSpecHandle.Data.Get()->GetContext().GetEffectCauser() == OtherActor)
+	{
+		return;
+	}
+
+	if (!UAuraAbilitySystemLibrary::IsNotFriend(DamageEffectSpecHandle.Data.Get()->GetContext().GetEffectCauser(), OtherActor))
 	{
 		return;
 	}
