@@ -59,10 +59,16 @@ public:
 	/* Abilities */
 	FGameplayTag Abilities_Attack;
 
+	/* Combat Sockets */
+	FGameplayTag CombatSocket_Weapon;
+	FGameplayTag CombatSocket_LeftHand;
+	FGameplayTag CombatSocket_RightHand;
+
 	/* Montages */
-	FGameplayTag Montage_Attack_Weapon;
-	FGameplayTag Montage_Attack_LeftHand;
-	FGameplayTag Montage_Attack_RightHand;
+	FGameplayTag Montage_Attack1;
+	FGameplayTag Montage_Attack2;
+	FGameplayTag Montage_Attack3;
+	FGameplayTag Montage_Attack4;
 
 	/* Effects */
 	FGameplayTag Effects_HitReact;
