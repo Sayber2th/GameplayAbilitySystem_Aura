@@ -9,6 +9,7 @@ NOTE -
 4) This project is being built with multiplayer support in mind.
 
 //* Controls *//
+
 Movement - left click tap to auto move character to location, hold to move the character in the direction of the mouse cursor
 Shoot fireball - while aiming at and highlighting an enemy, left click. To shoot manually hold left shift and left click to shoot a fireball without the need to highlight an enemy.
 
