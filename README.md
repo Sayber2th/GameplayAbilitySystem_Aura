@@ -8,18 +8,25 @@ NOTE -
 3) All C++ code is available in this repository.
 4) This project is being built with multiplayer support in mind.
 
+
 //* Controls *//
 
 Movement - left click tap to auto move character to location, hold to move the character in the direction of the mouse cursor
 Shoot fireball - while aiming at and highlighting an enemy, left click. To shoot manually hold left shift and left click to shoot a fireball without the need to highlight an enemy.
 
+
 //* Objective *//
+
 The goal of this project is to improve my coding skills by writing clean code in an easy-to-understand manner.
 
+
 //* Challenges *//
-The concept of multiplayer coding felt tough to understand and grasp. The concept of setting up expandable code for the replication of attributes and tags was a challenge for this project.
+
+The concept of multiplayer coding felt tough to understand and grasp. The concept of setting up expandable code for the multiplayer replication of attributes and tags was a challenge for this project.
+
 
 //* Lessons learnt *//
+
 This project/course has taught me many concepts of game development/programming. Notable ones are as follows:-
 1) Debugging code.
 2) Writing modular, easy-to-refactor code that takes into account the possibility of future additions/changes.
