@@ -11,26 +11,26 @@ NOTE -
 
 //* Controls *//
 
-Movement - left click tap to auto move character to location, hold to move the character in the direction of the mouse cursor
-Shoot fireball - while aiming at and highlighting an enemy, left click. To shoot manually hold left shift and left click to shoot a fireball without the need to highlight an enemy.
+Movement - Tap left click to auto-move the character to location, hold left click to manually move the character in the direction of the mouse cursor
+Shoot fireball - While aiming at and highlighting an enemy, left click to shoot a fireball targeted at the highlighted enemy. To shoot manually without the need for a highlighted enemy, hold left shift and left click.
 
 
 //* Objective *//
 
-The goal of this project is to improve my coding skills by writing clean code in an easy-to-understand manner.
+The primary objective of this project is to learn about the Gameplay Ability System of Unreal Engine in the context of a multiplayer game. A secondary goal of this project was to improve my overall coding skills and specifically write clean code that is easy to expand upon and easy to understand.
 
 
 //* Challenges *//
 
-The concept of multiplayer coding felt tough to understand and grasp. The concept of setting up expandable code for the multiplayer replication of attributes and tags was a challenge for this project.
+Understanding and setting up expandable code for the multiplayer replication of attributes and tags in Unreal Engine was a big challenge for this project. This in tandem with learning the Gameplay Ability System turned out to be the most challenging project for me so far.
 
 
 //* Lessons learnt *//
 
-This project/course has taught me many concepts of game development/programming. Notable ones are as follows:-
-1) Debugging code.
+This project/course has taught me many new concepts of game development and improved my existing skills. They are as follows:-
+1) Learning to debug code and to do so efficiently by reading the call stack recognising the important call stack path.
 2) Writing modular, easy-to-refactor code that takes into account the possibility of future additions/changes.
-3) Writing clean and easy-to-read code.
-4) Solving technical issues that may arise while working with coding software.
-5) Multiplayer coding basics.
-6) Good workflow for writing code.
+3) Improving my skill of writing clean and easy-to-read code.
+4) Getting better at solving technical issues that may arise while working with coding software.
+5) Learning what it takes to set up a game for multiplayer.
+6) Improving my workflow for writing code.
