@@ -10,6 +10,7 @@ NOTE -
 
 
 Explanation of what you see in the execution build and the showcase video:-
+
 There are several pick-up items on the map. There are two kinds of pickups(potions and crystals) for health and mana. The potions offer a one-off instant addition to the health/mana reserves, whereas the crystals offer a smaller periodic increase to the health/mana reserves over a certain amount of time.
 There are several kinds of enemies on the map. There are two kinds of goblins, one attacks close range with a spear, and another attacks from a long range with a slingshot. There is another enemy with the same model as the goblin but with a mask, named the shaman. This enemy is slower and launches fireballs like the player character.
 There is a ghoul, the bigger blue model with the exposed brain. This enemy is a melee attacker with attacks for both left and right hands.
