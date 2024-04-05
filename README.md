@@ -11,7 +11,7 @@ NOTE -
 
 //* Controls *//
 
-Movement - Tap left click to auto-move the character to location, hold left click to manually move the character in the direction of the mouse cursor
+Movement - Tap left-click on floors to auto-move the character to location; hold left-click to manually move the character in the direction of the mouse cursor.
 Shoot fireball - While aiming at and highlighting an enemy, left click to shoot a fireball targeted at the highlighted enemy. To shoot manually without the need for a highlighted enemy, hold left shift and left click.
 
 
@@ -27,10 +27,11 @@ Understanding and setting up expandable code for the multiplayer replication of 
 
 //* Lessons learnt *//
 
-This project/course has taught me many new concepts of game development and improved my existing skills. They are as follows:-
+This project/course has taught me many new game development concepts and improved my existing skills. They are as follows:-
 1) Learning to debug code and to do so efficiently by reading the call stack recognising the important call stack path.
-2) Writing modular, easy-to-refactor code that takes into account the possibility of future additions/changes.
+2) Writing modular, easy-to-refactor code that considers the possibility of future additions/changes.
 3) Improving my skill of writing clean and easy-to-read code.
 4) Getting better at solving technical issues that may arise while working with coding software.
 5) Learning what it takes to set up a game for multiplayer.
 6) Improving my workflow for writing code.
+7) Learning to organise C++ scripts in appropriate folders for better useability.
