@@ -20,10 +20,12 @@ There is a ghoul, the bigger blue model with the exposed brain. This enemy is a 
 There is a red enemy model with horns named the demon. This enemy is also a melee attacker, but attacks with his tail using a spin attack. This enemy is also slightly faster than others.
 
 
+
 //* Controls *//
 
 Movement - Tap left-click on floors to auto-move the character to location; hold left-click to manually move the character in the direction of the mouse cursor.
 Shoot fireball - While aiming at and highlighting an enemy, left-click to shoot a fireball targeted at the highlighted enemy. To shoot manually without the need for a highlighted enemy, hold left shift and left-click.
+
 
 
 //* Objective *//
@@ -31,9 +33,16 @@ Shoot fireball - While aiming at and highlighting an enemy, left-click to shoot 
 The primary objective of this project is to learn about the Gameplay Ability System of Unreal Engine in the context of a multiplayer game. A secondary goal of this project was to improve my overall coding skills and specifically write clean code that is easy to expand upon and easy to understand.
 
 
+
 //* Challenges *//
 
 Understanding and setting up expandable code for the multiplayer replication of attributes and tags in Unreal Engine was a big challenge for this project. This in tandem with learning the Gameplay Ability System turned out to be the most challenging project for me so far.
+I was learning two completely new concepts with this project. Setting up a game project for multiplayer support, as well as the gameplay ability system in Unreal Engine. The combination of these two concepts both being new was quite a challenge for me. I had to take my time with each lecture that dealt with either or both of these concepts and sometimes replay some sections of the course multiple times.
+
+I faced several technical issues during this project. 
+
+One example would be - While working on this project I had to port over all the project files and the Unreal Engine editor files onto an external SSD from the internal SSD of my laptop. This was to free up some space on the internal SSD of my laptop because it was slowing down my device. During this process, I had to solve an issue that had popped up due to the file pathways being outdated in the '.workspace' file of Visual Studio Code IDE. I had figured out that the issue had something to do with the pathways being outdated, but needed to figure out where to go and switch out the old file pathways and input new ones.
+
 
 
 //* Lessons learnt *//
