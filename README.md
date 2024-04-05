@@ -3,8 +3,7 @@ This project best demonstrates my current skill level.
 
 NOTE - 
 1) This project is being made by taking an advanced course on Udemy on the vast and complex Gameplay Ability System within Unreal Engine.
-2) This project is being created in Unreal Engine using a combination of C++ and Unreal Engine's visual scripting language - Blueprint. All complex functionality is done in C++, while some minor functionality 
-   is implemented within Blueprint.
+2) This project uses a combination of C++ and Unreal Engine's visual scripting language - Blueprint. All complex functionality is done in C++, while some minor functionality is implemented within Blueprint.
 3) All C++ code is available in this repository.
 4) This project is being built with multiplayer support in mind.
 
@@ -12,7 +11,7 @@ NOTE -
 //* Controls *//
 
 Movement - Tap left-click on floors to auto-move the character to location; hold left-click to manually move the character in the direction of the mouse cursor.
-Shoot fireball - While aiming at and highlighting an enemy, left click to shoot a fireball targeted at the highlighted enemy. To shoot manually without the need for a highlighted enemy, hold left shift and left click.
+Shoot fireball - While aiming at and highlighting an enemy, left-click to shoot a fireball targeted at the highlighted enemy. To shoot manually without the need for a highlighted enemy, hold left shift and left-click.
 
 
 //* Objective *//
