@@ -6,12 +6,12 @@ NOTE -
 2) This project uses a combination of C++ and Unreal Engine's visual scripting language - Blueprint. All complex functionality is done in C++, while some minor functionality is implemented within Blueprint.
 3) All C++ code is available in this repository.
 4) This project is being built with multiplayer support in mind.
-5) At this point there is no way to exit or restart the game build other than by using the 'Alt + F4' shortcut.
+5) Currently there is no way to exit or restart the game build other than by using the 'Alt + F4' shortcut.
 
 
 Explanation of what you see in the execution build and the showcase video:-
 
-There are several pick-up items on the map. There are two kinds of pickups(potions and crystals) for health and mana. The potions offer a one-off instant addition to the health/mana reserves, whereas the crystals offer a smaller periodic increase to the health/mana reserves over a certain amount of time.
+There are several pick-up items on the map. There are two kinds of pickups(potions and crystals) for health and mana. The potions offer a one-off instant addition to the health/mana reserves. The crystals offer a smaller periodic increase to the health/mana reserves over a certain amount of time.
 
 There are several kinds of enemies on the map. There are two kinds of goblins, one attacks close range with a spear, and another attacks from a long range with a slingshot. There is another enemy with the same model as the goblin but with a mask, named the shaman. This enemy is slower and launches fireballs like the player character.
 
