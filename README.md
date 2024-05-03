@@ -7,7 +7,7 @@ NOTE -
 3) All C++ code is available in this repository.
 4) This project is being built with multiplayer support in mind.
 5) Currently there is no way to exit or restart the game build other than by using the 'Alt + F4' shortcut.
-6) The code for making actors in a level transparent/translucent when in the way of the camera and the character is taken from Albert Baudisch. Links to his instructional blog and GitHub for the same as follows:-
+6) The code for making actors in a level transparent/translucent when in the way of the camera and the character is taken from Alfred Baudisch. Links to his instructional blog and GitHub for the same as follows:-
    https://alfredbaudisch.com/blog/gamedev/unreal-engine-ue/unreal-engine-actors-transparent-block-camera-occlusion-see-through/
    https://gist.github.com/alfredbaudisch/7978f1913e76640e2dc25b770ffa6ae1
 
